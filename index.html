@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TodoApp</title>
+        <link rel="stylesheet" href="src/styles.css" />
+        <title>TodoApp(JS)</title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <div id = "app">
-
+        <div class = "input-area">
+            <input id = "add-text" placeholder="TODOを入力">
+            <button id="add-button">追加</button>
+        </div>
+        <div class = "incomplete-area">
+            <p class = "title">未完了のTODO</p>
+            <ul id = "incomplete-list">
+                <li>
+                    <div  class = "list-low">
+                        <p>TODOです</p>
+                        <button>完了</button>
+                        <button>削除</button>
+                    </div>
+                </li>
+                <li>
+                    <div  class = "list-low">
+                        <p>TODOです</p>
+                        <button>完了</button>
+                        <button>削除</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class = "complete-area">
+            <p >完了したのTODO</p>
+            <ul id = "complete-list">
+                <li>
+                    <div  class = "list-low">
+                        <div>TODOでした</div>
+                        <button>戻す</button>
+                    </div>
+                </li>
+            </ul>
         </div>
         <script src="src/index.js">
 
